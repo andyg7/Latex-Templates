@@ -2,6 +2,7 @@
 \usepackage{url, graphicx}
 \usepackage[margin=1in]{geometry}
 \usepackage{textcomp}
+\usepackage{algpseudocode}
 
 
 \title{Problem Set 1}
@@ -12,32 +13,40 @@
 
 \maketitle
 
+\section{First Section}
+
 Today is \today. \newline
 ``Hey man what is $5 - 1$?''\newline
-This is a small new parapgraph that doesn't contain much useful info. Just another \LaTeX{} doc.Books are often typeset with each line having the same length. LATEX 
+This is a small new parapgraph that doesn't contain much useful info. Just another \LaTeX{} doc.
+Books are often typeset with each line having the same length. LATEX 
 inserts the necessary line breaks and spaces between words by optimizing the contents of a whole paragraph. If necessary, it also hyphenates words that would not fit comfortably on a line. How the paragraphs are typeset depends on the document class. Normally the first line of a paragraph is indented, and there is no additional space between two paragraphs. Refer to section 6.3.2 for more information.
 Not a new line?
 % This is an epic comment
 
-Is it cool to have a new paragraph here or not? Read\slash{} write\newline
+Is it cool to have a new paragraph here or not? Read\slash{} write
 
-Temp today  \today{} is $-30\, ^{\circ}\mathrm{C}$\newline
+\subsection{Temp info}
+
+Temp today  \today{} is $-30\, ^{\circ}\mathrm{C}$
+
 Another way to write it is as 30 \textcelsius{} is 86 \textdegree{}F
-\newline
-\newline
-\newline
-\newline
+
+\section{Seconds Section}
+
+In equation~\ref{Einstein equation} we have Einstein's equation and in equation~\ref{sum} we have the sum notation.
 
 %Example 1
 \ldots when Einstein introduced his formula
 \begin{equation}
 e = m \cdot c^2 \;
+\label{Einstein equation}
 \end{equation}
 
 %Example 2
 \ldots from which follows Kirchhoff's current law:
 \begin{equation}
 \sum_{k=1}^{n} I_k = 0\;
+\label{sum}
 \end{equation}
 
 %Example 3
@@ -46,6 +55,34 @@ e = m \cdot c^2 \;
 \begin{equation}
 I_D = I_F - I_R
 \end{equation}
+
+\section{Algo Section}
+
+Creating nice pseudocode algorithms.
+
+\subsection{My Algorithm}
+
+Did you learn \LaTeX?
+
+\begin{algorithmic}
+\If {$learned \geq sortof$}
+	\State $okay \gets true$
+\Else
+	\While {$!okay$}
+		\State repeat course
+		\State {$okay = learned \geq sortof$}
+	\EndWhile
+\EndIf
+\end{algorithmic}
+
+\section{Conclusion}
+We can conclude by referencing a bunch of our equations. Below we have ~\ref{eq:minutes}
+\begin{equation}
+24 * 60 = 1,440 
+\label{eq:minutes}
+\end{equation}
+
+
 
 
 \end{document} 
