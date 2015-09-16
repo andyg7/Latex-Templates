@@ -7,6 +7,7 @@
 \usepackage{titling}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{amsthm}
 
 
 
@@ -21,6 +22,7 @@
 
 %First problem
 \section{}
+
 \begin{enumerate}
 \item[a)] apple
 \item[b)] apple
@@ -61,6 +63,28 @@
 \item[b)] apple
 \item[c)] apple
 \end{enumerate}
+
+
+%PROOF
+Proof Idea: We have a decidable language $A$ and we want to show $\overline{A}$ is also decidable. If $M$ decides $A$ then we can create a turing machine $M'$ that decides $\overline{A}$ by running $M$ on input $w$ and and outputing the opposite of $M$.
+
+\begin{proof}
+Let $M$ decide  $A$
+\\
+ $M$ = ``On input string \emph{w}: 
+\begin{enumerate}
+\item[1)] Run $M$ on $w$
+\begin{enumerate}
+\item[a)] 
+ \begin{algorithmic}
+\If {$M$ accepts $w$}
+	\State \emph{accept}
+\Else { \emph{reject}}
+\EndIf
+\end{algorithmic}
+\end{enumerate}
+\end{enumerate}
+\end{proof}
 
 %MATH GENERAL
 \section{Useful Math symbols}
